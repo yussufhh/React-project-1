@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    height: 100vh;
+    background-image: url(https://user-images.githubusercontent.com/13468728/233847739-219cb494-c265-4554-820a-bd3424c59065.jpg);
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-image: url(https://user-images.githubusercontent.com/13468728/233847739-219cb494-c265-4554-820a-bd3424c59065.jpg);
+    height: 90px;
+    padding: 30px 25px;
+    width: 100%;
+}
+
+.nav--logo_text, .nav--title {
+    margin: 0;
+}
+
+.nav--logo_text {
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+}
+
+.nav--title {
+    color: #DEEBF8;
+    font-weight: 600;
+}
+
+.nav--icon {
+    height: 50px;
+    margin-right: 7px;
+}
+
+main {
+    height: 100%;
+}
+
+.nav-items {
+    display: flex;
+    margin-left: 250px;
+}
+
+.nav-items a {
+    padding: 10px;
+    margin-left: 45px;
+    text-decoration: none;
+    color: #61DAFB;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* Hover effect for nav links */
+.nav-items a:hover {
+    color: tomato; /* Change color of the link on hover */
+    text-decoration: underline; /* Optional: add underline on hover */
+    padding-left: 8px;
+}
+
+/* Style for active link */
+.nav-items .active {
+    color: tomato; /* Change color of the active link */
+    text-decoration: underline; /* Optional: underline the active link */
+   
+}
+
+span {
+    text-decoration: none;
+    color: tomato;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* For tablets and larger phones */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .nav-items a {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+/* For smaller phones */
+@media (max-width: 480px) {
+    .nav--logo_text {
+        font-size: 18px;
+    }
+
+    .nav--icon {
+        height: 40px;
+    }
+
+    .nav-items a {
+        font-size: 16px;
+    }
+}
