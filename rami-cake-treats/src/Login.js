@@ -1,6 +1,8 @@
 import React from 'react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Login.css';
+
 
 const Login = () => {
 
@@ -37,7 +39,7 @@ const Login = () => {
                 </div>
                 <button>Log in</button>
                 <div className="register">
-                    <p>Don't have a account <a href="PASS">Register</a></p>
+                <p>Don't have an account? <Link path to="/SignUp">Register</Link></p>
                 </div>
             </form>
         </section>

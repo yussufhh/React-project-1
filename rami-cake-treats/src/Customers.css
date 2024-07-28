@@ -1,0 +1,64 @@
+/* General Styling */
+.customers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: hwb(350 61% 13%);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+  background-color: rgb(165, 71, 86);
+}
+.spans{
+  margin-top: 90px;
+  font-size: 24px;
+  font-weight: 500;
+ text-transform: capitalize;
+}
+.card-button {
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  height: 150px; /* Height of the button */
+  width: 150px; /* Width of the button */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.card-title {
+  text-align: center;
+  margin: 0;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-button {
+    width: 120px; /* Smaller width for mobile */
+    height: 120px; /* Smaller height for mobile */
+  }
+}
