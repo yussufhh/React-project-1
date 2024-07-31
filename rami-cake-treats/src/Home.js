@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 import Customers from "./Customers";
+import Main from "./Main";
+
 
 const Home = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(false);
-    const [clickedButtons, setClickedButtons] = useState({});
-
-    const handleOrder = (id) => {
-        setClickedButtons((prev) => ({ ...prev, [id]: true }));
-    };
-
     useEffect(() => {
         setLoading(true);
         fetch('http://localhost:3000/pizzas')
@@ -21,8 +17,11 @@ const Home = () => {
     }, []);
 
     return (
+        <div>
+              <Main/>
+        
         <div className="container text-center my-4">
-            <h1>Pizzas</h1>
+            <h1 style={{fontSize:'45px', fontWeight:'bold'}}>Pizzas</h1>
             {loading ? (
                 <p className="font-weight-bold">Loading...</p>
             ) : (
@@ -35,11 +34,8 @@ const Home = () => {
                                     <h2 className="card-title h5">{pizza.name}</h2>
                                     <p className="card-text">{pizza.description}</p>
                                     <p className="card-text">{pizza.price}</p>
-                                    <button 
-                                        onClick={() => handleOrder(pizza.id)} 
-                                        style={{ backgroundColor: clickedButtons[pizza.id] ? 'white' : 'pink' }}
-                                    >
-                                        Order
+                                    <button>
+                                        <Link path to="/contact"> Order</Link>
                                     </button>
 
                                 </div>
@@ -48,10 +44,13 @@ const Home = () => {
                     ))}
                     
                 </div>
-                
+             
             )}
              <Customers/>
             
+            
+            
+        </div>
         </div>
         
     );

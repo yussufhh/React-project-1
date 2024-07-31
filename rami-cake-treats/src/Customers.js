@@ -1,18 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import './Customers.css'
 
 const Customers = () => {
   const [cakesBaked, setCakesBaked] = useState(0);
   const [happyClients, setHappyClients] = useState(0);
   const [yearsInBusiness, setYearsInBusiness] = useState(0);
   const [uniqueFlavors, setUniqueFlavors] = useState(0);
-
-  const handleClick = () => {
-    setCakesBaked(cakesBaked + 3);
-    setHappyClients(happyClients + 3);
-    setYearsInBusiness(yearsInBusiness + 1);
-    setUniqueFlavors(uniqueFlavors + 2);
-  };
 
   useEffect(() => {
     if (cakesBaked < 5500) {
@@ -42,30 +34,40 @@ const Customers = () => {
     }
   }, [uniqueFlavors]);
 
+  const containerStyle = {
+    display: 'flex',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    padding: '20px',
+    width: '100%',
+    flexWrap: 'wrap',
+  };
+
+  const counterStyle = {
+    color: 'black',
+    textAlign: 'center',
+    margin: '40px 0', // Margin from both top and bottom
+  };
+
+  const labelStyle = {
+    fontSize: '1.1em',
+    color: '#fff',
+  };
+
   return (
-    <div className='customers-container '>
-      <section className='card'>
-        <button className='button1' onClick={handleClick}>
-          <h2 className='h2'>
-            {cakesBaked}+<br /><span className='spans'>Cakes Baked</span>
-          </h2>
-        </button>
-        <button className='button1' onClick={handleClick}>
-          <h2 className='h2'>
-            {happyClients}+<br /><span className='spans'>Happy Clients</span>
-          </h2>
-        </button>
-        <button className='button1' onClick={handleClick}>
-          <h2 className='h2'>
-            {yearsInBusiness}+<br /><span className='spans'>Years in Business</span>
-          </h2>
-        </button>
-        <button className='button1' onClick={handleClick}>
-          <h2 className='h2'>
-            {uniqueFlavors}+<br /><span className='spans'>Unique Flavors</span>
-          </h2>
-        </button>
-      </section>
+    <div style={containerStyle}>
+      <div style={counterStyle}>
+        <h2>{cakesBaked}+<br /><span style={labelStyle}>Cakes Baked</span></h2>
+      </div>
+      <div style={counterStyle}>
+        <h2>{happyClients}+<br /><span style={labelStyle}>Happy Clients</span></h2>
+      </div>
+      <div style={counterStyle}>
+        <h2>{yearsInBusiness}+<br /><span style={labelStyle}>Years in Business</span></h2>
+      </div>
+      <div style={counterStyle}>
+        <h2>{uniqueFlavors}+<br /><span style={labelStyle}>Unique Flavors</span></h2>
+      </div>
     </div>
   );
 };

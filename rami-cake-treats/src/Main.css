@@ -1,0 +1,10 @@
+.maain{
+    background-image: url(https://img.freepik.com/premium-photo/woman-eating-baked-mash-potato-wrap-with-aluminium-foil-lunch-dinner-restaurant_1048944-12728708.jpg?ga=GA1.1.645881715.1722141347&semt=ais_hybrid);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+}

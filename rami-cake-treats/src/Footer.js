@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="site-footer">
+    <footer className="site-footer footer1">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-6">
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-         
+    
         </div>
       </div>
     </footer>

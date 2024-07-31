@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Bakery from "./Bakery";
-import BakeryData from "./data";
-import './Menu.css';
+import React from "react";
+import { useEffect, useState } from "react";
+import './About.css'
+
 
 const backgroundImages = [
   'https://img.freepik.com/free-photo/plate-food-with-burger-bowl-soup_1340-34224.jpg?ga=GA1.2.645881715.1722141347&semt=ais_hybrid',
@@ -14,41 +14,39 @@ const backgroundImages = [
   'https://media.istockphoto.com/id/1524823226/photo/colorful-raw-fruits-and-vegetables-varied-vegan-food-vivid-rainbow-arrangement.jpg?s=1024x1024&w=is&k=20&c=YTunI-mqv7gsrISIq7gt-TnJD7TQLE_QtFCaD55TZe0=',
   'https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.jpg?s=1024x1024&w=is&k=20&c=VaRsD5pHXDCMcwcAsOGaaBadptx0nHaJUuVKpyWaq3A='
 ];
-const quotes= [
-  'The secret of success in life is to eat what you like and let the food fight it out inside.',
-  'The only time to eat diet food is while you\'re waiting for the steak to cook.',
-  'Life\'s too short to eat bad food.'
-];
-const Menu = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-    <div className="menu-header">
-      <div className="background-image" style={{ backgroundImage: `url(${backgroundImages[currentImageIndex]})` }}></div>
-      <div className="menu-content">
-        <div className="menu">
-          <h2 className="cake-Text">Our Menu</h2>
-          <p className="cake-des">
-            Authentic Italian cuisine. 6 creative dishes to choose from. All from
-            our stone oven, all organic, all delicious.
-          </p>
-          <ul className="pizzas">
-            {BakeryData.map((bakery) => {
-              return <Bakery key={bakery.name} bakeryObject={bakery} />;
-            })}
-          </ul>
+  
+  const quotes= [
+    'The secret of success in life is to eat what you like and let the food fight it out inside.',
+    'The only time to eat diet food is while you\'re waiting for the steak to cook.',
+    'Life\'s too short to eat bad food.'
+  ];
+  
+  const About = () => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) =>(prevIndex + 1) % backgroundImages.length);
+      }, 3000); 
+  
+      return () => clearInterval(interval);
+    }, []);
+  
+    return (
+      
+        <div className="menu-header">
+          <div className="background-image" style={{ backgroundImage:`  url(${backgroundImages[currentImageIndex]})` }}></div>
+          <div className="menu-title">
+            <h1>Rami Cake Treats All The Time!👇</h1>
+            <p>All of our menus are available for takeout as well as dine-in. Please order by calling the restaurant<br></br> to place a takeout order. Menus change often with seasons and ingredients.</p>
+            <div className="quote-container">
+              <p className="quote">{quotes[currentImageIndex % quotes.length]}</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  );
-}
+        
+    )
 
-export default Menu;
+    }
+
+    export default About;

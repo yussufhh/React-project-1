@@ -1,60 +1,134 @@
 {
-    "pizzas": [
-      {
-        "id": 1,
-        "name": "Margherita",
-        "description": "A classic pizza with tomato, mozzarella, and fresh basil.",
-        "image": "https://img.freepik.com/premium-photo/pepperoni-pizza-cheese-pizza-food-pizza-pizza-pepperoni-mozzarella-mozzarella-cheese-cheese_812450-5.jpg?ga=GA1.1.645881715.1722141347&semt=sph"
-      },
-      {
-        "id": 2,
-        "name": "Pepperoni",
-        "description": "Loaded with spicy pepperoni slices and melted mozzarella cheese.",
-        "image": "https://image.shutterstock.com/image-photo/pizza-napoletana-traditional-authentic-italian-260nw-2119603733.jpg"
-      },
-      {
-        "id": 3,
-        "name": "BBQ Chicken",
-        "description": "Tender chicken pieces with BBQ sauce, red onions, and cilantro.",
-        "image": "https://img.freepik.com/free-photo/grilled-chicken-plate-with-chili-garlic-sprinkled-with-pepper-seeds_1150-24350.jpg?semt=ais_user"
-      },
-      {
-        "id": 4,
-        "name": "Vegetarian",
-        "description": "A delightful mix of bell peppers, mushrooms, onions, and olives.",
-        "image": "https://image.shutterstock.com/image-photo/neapolitan-homemade-pizza-margarita-brick-260nw-2461956517.jpg"
-      },
-      {
-        "id": 5,
-        "name": "Hawaiian",
-        "description": "Sweet pineapple chunks with ham and mozzarella cheese.",
-        "image": "https://img.freepik.com/free-photo/pizza-hawaiian-seafood_1203-2449.jpg?semt=sph"
-      },
-      {
-        "id": 6,
-        "name": "Four Cheese",
-        "description": "A rich blend of mozzarella, cheddar, blue cheese, and parmesan.",
-        "image": "https://img.freepik.com/premium-photo/cheese-wooden-table_93675-71841.jpg?semt=ais_user"
-      },
-      {
-        "id": 7,
-        "name": "Seafood",
-        "description": "A savory combination of shrimp, calamari, and clams.",
-        "image": "https://img.freepik.com/free-photo/thai-food-tom-yum-kung-river-prawn-spicy-soup_1150-35451.jpg?semt=sph"
-      },
-      {
-        "id": 8,
-        "name": "Buffalo Chicken",
-        "description": "Spicy buffalo chicken with ranch dressing and celery.",
-        "image": "https://img.freepik.com/free-photo/baked-chicken-wings-asian-style-tomatoes-sauce-plate_2829-17204.jpg?semt=ais_user"
-      },
-      {
-        "id": 9,
-        "name": "Pesto",
-        "description": "Fresh basil pesto with sun-dried tomatoes and pine nuts.",
-        "image": "https://img.freepik.com/premium-photo/vegerables-baked-with-cheese_1472-250.jpg?semt=sph"
-      }
-      
-    ]
-  }
-  
+  "pizzas": [
+    {
+      "id": "1",
+      "name": "Margherita",
+      "description": "A classic pizza with tomato, mozzarella, and fresh basil.",
+      "image": "https://media.istockphoto.com/id/1349383878/photo/hawaiian-pizza-with-ham-and-pineapple.jpg?b=1&s=612x612&w=0&k=20&c=NIMBpMr4nLDfIhTfJ9aF23BQm6O5ZCGbKxgJBKVCF6g="
+    },
+    {
+      "id": "2",
+      "name": "Pepperoni",
+      "description": "Loaded with spicy pepperoni slices and melted mozzarella cheese.",
+      "image": "https://media.istockphoto.com/id/938742222/photo/cheesy-pepperoni-pizza.jpg?b=1&s=612x612&w=0&k=20&c=ZcLXrogjpyc5froC5ZIP-0uepbhldATwmCbt3mzViGQ="
+    },
+    {
+      "id": "3",
+      "name": "BBQ Chicken",
+      "description": "Tender chicken pieces with BBQ sauce, red onions, and cilantro.",
+      "image": "https://img.freepik.com/free-photo/grilled-chicken-plate-with-chili-garlic-sprinkled-with-pepper-seeds_1150-24350.jpg?semt=ais_user"
+    },
+    {
+      "id": "4",
+      "name": "Vegetarian",
+      "description": "A delightful mix of bell peppers, mushrooms, onions, and olives.",
+      "image": "https://image.shutterstock.com/image-photo/neapolitan-homemade-pizza-margarita-brick-260nw-2461956517.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Hawaiian",
+      "description": "Sweet pineapple chunks with ham and mozzarella cheese.",
+      "image": "https://img.freepik.com/free-photo/pizza-hawaiian-seafood_1203-2449.jpg?semt=sph"
+    },
+    {
+      "id": "6",
+      "name": "Four Cheese",
+      "description": "A rich blend of mozzarella, cheddar, blue cheese, and parmesan.",
+      "image": "https://img.freepik.com/premium-photo/cheese-wooden-table_93675-71841.jpg?semt=ais_user"
+    },
+    {
+      "id": "7",
+      "name": "Seafood",
+      "description": "A savory combination of shrimp, calamari, and clams.",
+      "image": "https://img.freepik.com/free-photo/thai-food-tom-yum-kung-river-prawn-spicy-soup_1150-35451.jpg?semt=sph"
+    },
+    {
+      "id": "8",
+      "name": "Buffalo Chicken",
+      "description": "Spicy buffalo chicken with ranch dressing and celery.",
+      "image": "https://img.freepik.com/free-photo/baked-chicken-wings-asian-style-tomatoes-sauce-plate_2829-17204.jpg?semt=ais_user"
+    },
+    {
+      "id": "9",
+      "name": "Pesto",
+      "description": "Fresh basil pesto with sun-dried tomatoes and pine nuts.",
+      "image": "https://img.freepik.com/premium-photo/vegerables-baked-with-cheese_1472-250.jpg?semt=sph"
+    }
+  ],
+  "deleveryRequest": [
+    {
+      "id": "e5c4",
+      "name": "moon lover77",
+      "email": "moon@gmail.com",
+      "message": "the message is here"
+    },
+    {
+      "id": "b62f",
+      "name": "Yussuf hussein",
+      "email": "moon@gmail.com",
+      "message": "the message her"
+    },
+    {
+      "id": "001e",
+      "name": "moon lover",
+      "email": "moon@gmail.com",
+      "message": "thiss"
+    },
+    {
+      "id": "6d0b",
+      "name": "moon lover",
+      "email": "moon@gmail.com",
+      "message": "this is the message"
+    },
+    {
+      "id": "20cc",
+      "name": "moon lover",
+      "email": "moon@gmail.com",
+      "message": "This is the message"
+    },
+    {
+      "id": "b1f8",
+      "name": "moon lover",
+      "email": "moon@gmail.com",
+      "message": "this is the datat"
+    }
+  ],
+  "UsersData": [
+    {
+      "id": "5b57",
+      "firstName": "moon lover",
+      "lastName": "yukey",
+      "username": "hassan",
+      "phone": "07934776322",
+      "email": "hiboherson@gmail.com2",
+      "password": "1234567890"
+    },
+    {
+      "id": "47d0",
+      "firstName": "moon lover",
+      "lastName": "hassan",
+      "username": "ALikaaa",
+      "phone": "07934776322",
+      "email": "hiboherson@gmail.comm",
+      "password": "1234567890"
+    },
+    {
+      "id": "ea23",
+      "firstName": "moon lover",
+      "lastName": "hassan",
+      "username": "adesh",
+      "phone": "07934776323",
+      "email": "hiboherson@gmail.comm",
+      "password": "123456789"
+    },
+    {
+      "id": "97be",
+      "firstName": "Yussuf",
+      "lastName": "moon lover",
+      "username": "07934776323",
+      "phone": "",
+      "email": "hiboherson@gmail.comm",
+      "password": "123456789"
+    }
+  ]
+}

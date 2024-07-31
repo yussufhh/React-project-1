@@ -1,0 +1,30 @@
+/* Admin.css */
+.table-container {
+    background-color: hsl(350, 29%, 73%);
+    padding: 16px; /* Padding around the table */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.table-dark {
+    color: #fff; /* White text color */
+}
+
+.table-dark th, .table-dark td {
+    border-color:#f50303; /* Lighter border color for dark mode */
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly lighter background on hover */
+}
+
+table h2 {
+    color: #007bff; /* Blue color for the heading */
+    font-size: 2.25rem; /* Larger font size */
+}
+.p-4{
+    border: none;
+    margin-left: 400px;
+   
+  
+
+}

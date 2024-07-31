@@ -1,0 +1,38 @@
+/* LoadingScreen.css */
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blue;
+  }
+  
+  .dott {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: black;
+    border-radius: 50%;
+    animation: blink 1.5s infinite; 
+  }
+  
+  .dot1 {
+    animation-delay: 0s;
+  }
+  
+  .dot2 {
+    animation-delay: 0.3s;
+  }
+  
+  .dot3 {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes blink {
+    0%, 80%, 100% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+  }

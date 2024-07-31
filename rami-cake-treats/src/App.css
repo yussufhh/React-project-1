@@ -10,15 +10,7 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: "Roboto Mono", sans-serif;
-  color: #fff;
-  font-weight: 400;
-  background-color: #f7f2e9;
-  min-height: 100vh;
-  padding: 3.2rem;
-  padding-bottom: 6rem;
-}
+
 
 .container {
   max-width: 80rem;
@@ -26,7 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4.8rem;
+  gap: 0.8rem;
+  color: #fff;
 }
 
 /* *************** */
@@ -91,13 +84,15 @@ body {
   text-align: center;
   line-height: 1.6;
   width: 80%;
+  color: #fff;
 }
 
 .pizzas {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  gap: 3.8rem;
+  color: #fff;
 }
 
 .pizza {
@@ -150,9 +145,7 @@ body {
 
 /* *************** */
 
-.footer {
-  font-size: 1.4rem;
-}
+
 
 .order {
   display: flex;
@@ -161,36 +154,25 @@ body {
   gap: 2.4rem;
 }
 
-.btn {
-  color: inherit;
-  font-family: inherit;
-  border: none;
-  font-size: 1.4rem;
-  font-weight: 500;
-  background-color: #edc84b;
-  padding: 1.4rem 3.2rem;
-  cursor: pointer;
-  transition: all 0.2s;
-}
+
 
 .btn:hover {
   background-color: #e9bb24;
 }
-
-.btn0 {
-  color: inherit;
-  font-family: inherit;
-  border: none;
-  font-size: 1.4rem;
-  font-weight: 500;
-  background-color: green;
-  cursor: pointer;
-  transition: all 0;
-  width: 50px;
+.buttons{
+  width: 60px;
+  margin-top: 10px;
+  text-align: center;
+  
 }
+
+
 
 .priceSpan {
   color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+
 }
 
 /* *************** */

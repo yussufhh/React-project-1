@@ -7,31 +7,23 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: url(https://user-images.githubusercontent.com/13468728/233847739-219cb494-c265-4554-820a-bd3424c59065.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 section {
     position: relative;
     width: 500px;
     max-width: 500px; /* Increased max-width */
-    background-color: transparent;
+    text-align: center;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(55px);
+    background-image: url(https://user-images.githubusercontent.com/13468728/233847739-219cb494-c265-4554-820a-bd3424c59065.jpg);
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 2rem 3rem;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 400px;
+  
 }
 
 h1 {

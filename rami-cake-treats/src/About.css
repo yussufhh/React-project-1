@@ -1,0 +1,50 @@
+.menu-header {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background-color: #000; 
+  }
+  
+  .background-image {
+    background-position: center;
+    height: 100vh;
+    filter: brightness(100%);
+    transition: background-image 1s ease-in-out;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+  
+
+    
+  }
+  
+  .menu-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 90%;
+   
+  }
+  
+  .menu-title h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .menu-title p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .quote-container {
+    margin-top: 20px;
+  }
+  
+  .quote {
+    font-size: 24px;
+    font-style: italic;
+  }
