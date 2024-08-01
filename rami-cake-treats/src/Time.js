@@ -15,7 +15,7 @@ const Time = () => {
         fontSize: '1.5em',
         fontWeight: 'bold',
         textAlign: 'center',
-        marginTop: '20px'
+        marginTop: '10px'
     };
 
     return (

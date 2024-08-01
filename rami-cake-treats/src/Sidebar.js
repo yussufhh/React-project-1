@@ -3,10 +3,10 @@ import Time from "./Time";  // Adjust the import path as needed
 
 const Sidebar = () => {
     const sidebarStyle = {
-        width: '100px',
-        height: '100px',
+        width: '120px',
+        height: '60px',
         backgroundColor: '#fff',
-        padding: '20px',
+        padding: 'px',
         marginBottom: '20px',
         marginTop: '0',
         marginLeft:'8px'
@@ -17,9 +17,7 @@ const Sidebar = () => {
 
     return (
         <div style={sidebarStyle}>
-     
-
-           
+            <h3>moon lover</h3>
             <Time />
             {/* Other sidebar content */}
         </div>

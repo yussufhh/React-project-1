@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Swal from 'sweetalert2';
 import './Contact.css';
+import './Login.css';
 
 const ContactForm = () => {
     const nameRef = useRef(null);

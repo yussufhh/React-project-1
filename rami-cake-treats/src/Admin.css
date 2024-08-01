@@ -1,8 +1,14 @@
 /* Admin.css */
 .table-container {
     background-color: hsl(350, 29%, 73%);
-    padding: 16px; /* Padding around the table */
+    padding: 60px; /* Padding around the table */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  
+}
+.mt-4{
+    margin-bottom: 60px;
+    width:1000px;
+  
 }
 
 .table-dark {

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Bakery from "./Bakery";
 import BakeryData from "./data";
 import './Menu.css';
+import './About.css'; // Import About.css for consistent styling
 
 const backgroundImages = [
   'https://img.freepik.com/free-photo/plate-food-with-burger-bowl-soup_1340-34224.jpg?ga=GA1.2.645881715.1722141347&semt=ais_hybrid',
@@ -14,11 +15,16 @@ const backgroundImages = [
   'https://media.istockphoto.com/id/1524823226/photo/colorful-raw-fruits-and-vegetables-varied-vegan-food-vivid-rainbow-arrangement.jpg?s=1024x1024&w=is&k=20&c=YTunI-mqv7gsrISIq7gt-TnJD7TQLE_QtFCaD55TZe0=',
   'https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.jpg?s=1024x1024&w=is&k=20&c=VaRsD5pHXDCMcwcAsOGaaBadptx0nHaJUuVKpyWaq3A='
 ];
-const quotes= [
+
+const quotes = [
   'The secret of success in life is to eat what you like and let the food fight it out inside.',
   'The only time to eat diet food is while you\'re waiting for the steak to cook.',
-  'Life\'s too short to eat bad food.'
+  'Life\'s too short to eat bad food.',
+  'Food is symbolic of love when words are inadequate.',
+  'The best way to predict your future is to create it, especially if that future is full of delicious food.',
+  'Food brings us together and makes us happy.'
 ];
+
 const Menu = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -31,8 +37,12 @@ const Menu = () => {
   }, []);
 
   return (
-    <div className="menu-header">
-      <div className="background-image" style={{ backgroundImage: `url(${backgroundImages[currentImageIndex]})` }}></div>
+    <div className="menu-container">
+      <div className="background-image" style={{ backgroundImage: `url(${backgroundImages[currentImageIndex]})` }}>
+        <div className="menu-title"><h1>Rami Cake Treats All The Time!👇</h1>
+        <p style={{color:'#fff'}}>All of our menus are available for takeout as well as dine-in</p>
+        </div>
+      </div>
       <div className="menu-content">
         <div className="menu">
           <h2 className="cake-Text">Our Menu</h2>
@@ -41,11 +51,14 @@ const Menu = () => {
             our stone oven, all organic, all delicious.
           </p>
           <ul className="pizzas">
-            {BakeryData.map((bakery) => {
-              return <Bakery key={bakery.name} bakeryObject={bakery} />;
-            })}
+            {BakeryData.map((bakery) => (
+              <Bakery key={bakery.name} bakeryObject={bakery} />
+            ))}
           </ul>
         </div>
+      </div>
+      <div className="menu-title">
+        <p className="quote">{quotes[currentImageIndex % quotes.length]}</p>
       </div>
     </div>
   );

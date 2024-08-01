@@ -7,14 +7,14 @@ const Customers = () => {
   const [uniqueFlavors, setUniqueFlavors] = useState(0);
 
   useEffect(() => {
-    if (cakesBaked < 5500) {
+    if (cakesBaked < 4000) {
       const timeoutId = setTimeout(() => setCakesBaked(cakesBaked + 1), 5);
       return () => clearTimeout(timeoutId);
     }
   }, [cakesBaked]);
 
   useEffect(() => {
-    if (happyClients < 2500) {
+    if (happyClients < 2000) {
       const timeoutId = setTimeout(() => setHappyClients(happyClients + 1), 5);
       return () => clearTimeout(timeoutId);
     }

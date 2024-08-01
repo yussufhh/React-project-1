@@ -1,9 +1,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import Cards from "./Cards";
+import Map from "./Map";
 import './About.css'
 
 
 const backgroundImages = [
+  'https://media.gettyimages.com/id/1218254547/photo/varied-food-carbohydrates-protein-vegetables-fruits-dairy-legumes-on-wood.jpg?s=612x612&w=0&k=20&c=71-9AuSL4NDy98C9RwyAfsgKjHx5Jfm_Y8pvIwP9FqQ=',
+  'https://media.gettyimages.com/id/1457889029/photo/group-of-food-with-high-content-of-dietary-fiber-arranged-side-by-side.jpg?s=612x612&w=0&k=20&c=SEyObHsbBsrd1XZlgEg389VT86BMFKZKfKReKyVPAk4=',
   'https://img.freepik.com/free-photo/plate-food-with-burger-bowl-soup_1340-34224.jpg?ga=GA1.2.645881715.1722141347&semt=ais_hybrid',
   'https://img.freepik.com/premium-photo/food-photo-dishes-product-photography-wallpaper-background_1230902-13918.jpg?ga=GA1.2.645881715.1722141347&semt=ais_hybrid',
   'https://media.istockphoto.com/id/1455160776/photo/selection-of-healthy-food.webp?b=1&s=170667a&w=0&k=20&c=lDqbqjMVAii5xbw2cMay7x33Gm4Y3bOdjaf5Z0ehrPU=',
@@ -33,17 +37,22 @@ const backgroundImages = [
     }, []);
   
     return (
-      
+      <div>
         <div className="menu-header">
           <div className="background-image" style={{ backgroundImage:`  url(${backgroundImages[currentImageIndex]})` }}></div>
           <div className="menu-title">
-            <h1>Rami Cake Treats All The Time!👇</h1>
-            <p>All of our menus are available for takeout as well as dine-in. Please order by calling the restaurant<br></br> to place a takeout order. Menus change often with seasons and ingredients.</p>
+            <h1 style={{ opacity: '9.9'}}>Rami Cake Treats All The Time!👇</h1>
+            <p style={{ opacity: '9.9'}}>All of our menus are available for takeout as well as dine-in. Please order by calling the restaurant<br></br> to place a takeout order. Menus change often with seasons and ingredients.</p>
             <div className="quote-container">
               <p className="quote">{quotes[currentImageIndex % quotes.length]}</p>
             </div>
           </div>
         </div>
+           <Cards/>
+           <Map/>
+
+           </div>
+          
         
     )
 
