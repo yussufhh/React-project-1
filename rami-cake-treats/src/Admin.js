@@ -18,7 +18,7 @@ const backgroundImages = [
 ];
 
 const quotes = [
-  'TThe fondest memories are made when gathered around the table.',
+  'The fondest memories are made when gathered around the table.',
   'The only time to eat diet food is while you\'re waiting for the steak to cook.',
   'Life\'s too short to eat bad food.'
 ];
@@ -57,6 +57,25 @@ const Admin = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const deleteUser = (id) => {
+    fetch(`http://localhost:3000/deleveryRequest/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      }
+    })
+    .then(res => {
+      if (!res.ok) {
+        throw new Error('Network response was not ok');
+      }
+      setUsers(users.filter(user => user.id !== id));
+    })
+    .catch(error => {
+      console.error("Error deleting user:", error);
+    });
+  };
+
   return (
     <div className="admin-header">
       <div className="background-image" style={{ backgroundImage: `url(${backgroundImages[currentImageIndex]})` }}>
@@ -77,6 +96,7 @@ const Admin = () => {
               <th>Name</th>
               <th>Email</th>
               <th>Message</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -86,6 +106,11 @@ const Admin = () => {
                 <td>{user.name}</td>
                 <td>{user.email}</td>
                 <td>{user.message}</td>
+                <td>
+                  <button className="btn btn-danger btn-sm" onClick={() => deleteUser(user.id)}>
+                    Delete
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>

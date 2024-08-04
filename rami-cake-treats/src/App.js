@@ -31,9 +31,12 @@ const App = () => {
     return <LoadingScreen />;
   }
   return (
+    
     <div className="App">
+     
       <Navbar />
       <Header />
+      {/* <h4 className=" bg-blue-600">moon lover</h4> */}
    
       <Switch>
         <Route exact path="/menu">
@@ -54,6 +57,7 @@ const App = () => {
         <Route exact path="/">
           <Home />
         </Route>
+        
         <Route exact path="/about">
           <About />
         </Route>

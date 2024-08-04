@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Bakery from "./Bakery";
-import BakeryData from "./data";
+import ProductCards from "./ProductCards";
 import './Menu.css';
 import './About.css'; // Import About.css for consistent styling
 
@@ -37,30 +36,22 @@ const Menu = () => {
   }, []);
 
   return (
-    <div className="menu-container">
+  <div>
+
+<div className="menu-container">
       <div className="background-image" style={{ backgroundImage: `url(${backgroundImages[currentImageIndex]})` }}>
         <div className="menu-title"><h1>Rami Cake Treats All The Time!👇</h1>
         <p style={{color:'#fff'}}>All of our menus are available for takeout as well as dine-in</p>
         </div>
       </div>
-      <div className="menu-content">
-        <div className="menu">
-          <h2 className="cake-Text">Our Menu</h2>
-          <p className="cake-des">
-            Authentic Italian cuisine. 6 creative dishes to choose from. All from
-            our stone oven, all organic, all delicious.
-          </p>
-          <ul className="pizzas">
-            {BakeryData.map((bakery) => (
-              <Bakery key={bakery.name} bakeryObject={bakery} />
-            ))}
-          </ul>
-        </div>
-      </div>
+     
       <div className="menu-title">
         <p className="quote">{quotes[currentImageIndex % quotes.length]}</p>
       </div>
+      
     </div>
+    <ProductCards/>
+  </div>
   );
 }
 

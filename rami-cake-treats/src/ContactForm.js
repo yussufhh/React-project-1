@@ -59,8 +59,9 @@ const ContactForm = () => {
             <form className="form1" onSubmit={onSubmit}>
                 <h2 style={{color:'#fff'}}>Get in Touch</h2>
                 <div className="input-box">
-                    <label>Full Name</label>
+                    <label style={{color:'#fff'}}>Full Name</label>
                     <input
+                    style={{color:'#fff'}}
                         type="text"
                         className="field"
                         name="name"
@@ -70,8 +71,8 @@ const ContactForm = () => {
                     />
                 </div>
                 <div className="input-box">
-                    <label>Email Address</label>
-                    <input
+                    <label style={{color:'#fff'}}>Email Address</label>
+                    <input style={{color:'#fff'}}
                         type="email"
                         className="field"
                         name="email"
@@ -81,8 +82,8 @@ const ContactForm = () => {
                     />
                 </div>
                 <div className="input-box">
-                    <label>Your Message</label>
-                    <textarea
+                    <label style={{color:'#fff'}}>Your Message</label>
+                    <textarea  style={{color:'#fff'}}
                         className="field mess"
                         name="message"
                         placeholder="Enter your message"
@@ -90,7 +91,7 @@ const ContactForm = () => {
                         ref={messageRef}
                     />
                 </div>
-                <button type="submit" className="btn form-button">Send Message</button>
+                <button type="submit" className=" btn btn-primary"  style={{color:'#fff'}}>Send Message</button>
             </form>
             
         </section>

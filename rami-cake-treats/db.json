@@ -57,70 +57,28 @@
   ],
   "deleveryRequest": [
     {
-      "id": "e5c4",
-      "name": "moon lover77",
-      "email": "moon@gmail.com",
-      "message": "the message is here"
-    },
-    {
-      "id": "b62f",
-      "name": "Yussuf hussein",
-      "email": "moon@gmail.com",
-      "message": "the message her"
-    },
-    {
-      "id": "001e",
-      "name": "moon lover",
-      "email": "moon@gmail.com",
-      "message": "thiss"
-    },
-    {
-      "id": "6d0b",
-      "name": "moon lover",
-      "email": "moon@gmail.com",
-      "message": "this is the message"
-    },
-    {
-      "id": "20cc",
-      "name": "moon lover",
-      "email": "moon@gmail.com",
-      "message": "This is the message"
-    },
-    {
-      "id": "b1f8",
-      "name": "moon lover",
-      "email": "moon@gmail.com",
-      "message": "this is the datat"
-    },
-    {
-      "id": "f274",
-      "name": "hamza",
-      "email": "example@gmail.com",
-      "message": "Chips"
-    },
-    {
-      "id": "58cd",
-      "name": "moon loveru",
+      "id": "1632",
+      "name": "moon loverr",
       "email": "moon@gmail.comm",
-      "message": "pizza"
+      "message": "pizzaa44"
     },
     {
-      "id": "09de",
-      "name": "moon loveru",
-      "email": "moon@gmail.comu",
-      "message": "chipssm"
+      "id": "9b57",
+      "name": "moon lover3",
+      "email": "moon@gmail.comm",
+      "message": "chipsmodern"
     },
     {
-      "id": "7be4",
-      "name": "yyyui",
-      "email": "hiboherson@gmail.com",
-      "message": "pizza"
+      "id": "36ae",
+      "name": "moon lover700",
+      "email": "moon@gmail.comuu",
+      "message": "ugali"
     },
     {
-      "id": "cfe6",
-      "name": "hamzaa",
-      "email": "moon@gmail.com",
-      "message": "pizzaaa"
+      "id": "fc6a",
+      "name": "alima",
+      "email": "moon@gmail.commm",
+      "message": "Chips SAMAKI"
     }
   ],
   "UsersData": [
@@ -182,6 +140,22 @@
       "lastName": "moonlover5",
       "phone": "07934776327",
       "email": "hiboherson@gmail.comm",
+      "password": "123456789"
+    },
+    {
+      "id": "afda",
+      "firstName": "ridwan",
+      "lastName": "rashid",
+      "phone": "09876532",
+      "email": "rashidridhwan2001@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "a732",
+      "firstName": "Yussuf Hussen",
+      "lastName": "hassan",
+      "phone": "07934776328",
+      "email": "moonlover@gmail.com",
       "password": "123456789"
     }
   ]

@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p className="text-justify">
+            <p className="text">
               Rami Cake Treats is your go-to online bakery for delicious and freshly baked goods. 
             </p>
           </div>

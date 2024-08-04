@@ -147,7 +147,7 @@ const SignUp = () => {
                         />
                         <label>Confirm Password</label>
                     </div>
-                    <button type="submit" style={{color:'blue'}}><Link path to='login'>SignUp</Link></button>
+                    <button type="submit" style={{color:'blue'}}>SignUp</button>
                     <div className="register">
                         <p>Already have an account? <Link to='login'>Login</Link></p>
                     </div>

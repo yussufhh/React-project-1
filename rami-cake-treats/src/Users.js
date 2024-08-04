@@ -15,11 +15,6 @@ const backgroundImages = [
   'https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.jpg?s=1024x1024&w=is&k=20&c=VaRsD5pHXDCMcwcAsOGaaBadptx0nHaJUuVKpyWaq3A='
 ];
 
-const quotes = [
-  'The secret of success in life is to eat what you like and let the food fight it out inside.',
-  'The only time to eat diet food is while you\'re waiting for the steak to cook.',
-  'Life\'s too short to eat bad food.'
-];
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -60,12 +55,9 @@ const Users = () => {
   return (
     <div className="menu-header">
       <div className="background-image" style={{ backgroundImage: `url(${backgroundImages[currentImageIndex]})` }}></div>
-      <div className="menu-title">
+      <div className="menu-title"  style={{marginBottom:'0px'}}>
         <h1>Rami Cake Treats All The Time!👇</h1>
         <p>All of our menus are available for takeout as well as dine-in. Please order by calling the restaurant<br /> to place a takeout order. Menus change often with seasons and ingredients.</p>
-        <div className="quote-container">
-          <p className="quote">{quotes[currentImageIndex % quotes.length]}</p>
-        </div>
       </div>
       <div className="users-title">
         <h1 style={{ fontSize: '34px' }}>Users List</h1>
